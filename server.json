@@ -1,0 +1,97 @@
+{
+  "campain": [
+    {
+      "id": "1",
+      "name": "Campain 1",
+      "description": "Description 1",
+      "status": "active",
+      "startDate": "2021-01-01",
+      "endDate": "2021-01-01"
+    },
+    {
+      "id": "123141",
+      "name": "Campain 2",
+      "description": "Description 2",
+      "status": "active",
+      "startDate": "2021-01-01",
+      "endDate": "2021-01-01"
+    },
+    {
+      "id": "2",
+      "name": "Campain 3",
+      "status": "active",
+      "startDate": "2021-02-01",
+      "endDate": "2021-03-01"
+    },
+    {
+      "id": "8bb7",
+      "name": "Campain 3",
+      "status": "active",
+      "startDate": "2021-02-01",
+      "endDate": "2021-03-01"
+    },
+    {
+      "id": "5cb5",
+      "name": "Campain 3",
+      "status": "active",
+      "startDate": "2021-02-01",
+      "endDate": "2021-03-01"
+    },
+    {
+      "id": "4829",
+      "name": "teste",
+      "startDate": "2024-09-23T03:00:00.000Z",
+      "endDate": "2024-09-24T03:00:00.000Z",
+      "status": "active"
+    },
+    {
+      "id": "8333",
+      "name": "teste2",
+      "startDate": "2024-09-23T03:00:00.000Z",
+      "endDate": "2024-09-25T03:00:00.000Z",
+      "status": "active"
+    },
+    {
+      "id": "8243",
+      "name": "rere",
+      "startDate": "2024-09-23T03:00:00.000Z",
+      "endDate": "2024-09-25T03:00:00.000Z",
+      "status": "active"
+    },
+    {
+      "id": "7a8b",
+      "name": "teste3",
+      "startDate": "2024-09-24T03:00:00.000Z",
+      "endDate": "2024-09-26T03:00:00.000Z",
+      "status": "active"
+    },
+    {
+      "id": "1d21",
+      "name": "teste 123",
+      "startDate": "2024-09-23T03:00:00.000Z",
+      "endDate": "2024-09-26T03:00:00.000Z",
+      "status": "active"
+    },
+    {
+      "id": "49d3",
+      "name": "teste",
+      "startDate": "2024-09-23T03:00:00.000Z",
+      "endDate": "2024-09-27T03:00:00.000Z",
+      "status": "active"
+    },
+    {
+      "id": "b9a8",
+      "name": "Teste",
+      "startDate": "2024-09-23T03:00:00.000Z",
+      "endDate": "2024-09-25T03:00:00.000Z",
+      "status": "active"
+    },
+    {
+      "id": "f004",
+      "name": "123",
+      "startDate": "2024-09-24T03:00:00.000Z",
+      "endDate": "2024-09-26T03:00:00.000Z",
+      "status": "active"
+    }
+  ]
+}

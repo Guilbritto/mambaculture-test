@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ActionItem Component should match the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="border-b flex items-center gap-2 p-3 cursor-pointer hover:bg-slate-100 font-normal space-x-2"
+  />
+</DocumentFragment>
+`;
