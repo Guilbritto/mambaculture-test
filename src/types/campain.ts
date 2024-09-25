@@ -5,4 +5,5 @@ export type Campain = {
     startDate: string;
     endDate: string;
     status: string;
+    createAt: string;
 }

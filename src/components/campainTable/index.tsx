@@ -1,7 +1,6 @@
 'use client'
 
-import { ActionMenu } from "@/app/(app)/components/actionMenu"
-import { formatDate } from "@/app/utils/date"
+import { formatDate } from "@/lib/date"
 import { Card } from "@/components/ui/card"
 import {
     Table,
@@ -11,38 +10,25 @@ import {
     TableHeader,
     TableRow,
 } from "@/components/ui/table"
-import { Campain } from "@/types/campain"
-import { Paginated } from "@/types/paginated"
 import { Pagination, PaginationContent } from "@/components/ui/pagination"
-import { getCampain } from "@/app/(app)/data"
-import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import {  ChevronLeft, ChevronRight } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
+import { ActionMenu } from "@/components/actionMenu"
+import { useCampain } from "@/context/useCampain"
 
-export type CampainTableProps = {
-    paginatedCampain: Paginated<Campain[]>
-}
 
-export const CampainTable = ({paginatedCampain}: CampainTableProps) => {
-    const [campains, setCampains] = useState<Paginated<Campain[]>>(paginatedCampain);
+export const CampainTable = () => {
+    const {campains, fetchCampains} = useCampain()
 
     const handlePrevious = async () => {
         if(campains.prev === null) return
-
-        const response = await getCampain(campains.prev)
-        if (response) {
-            setCampains(response)
-        }
+        await fetchCampains(campains.prev)
     }
 
     const handleNext = async () => {
         if(campains.next === null) return
-
-        const response = await getCampain(campains.next)
-        if(response){
-            setCampains(response)
-        }
+        await fetchCampains(campains.next)
     }
     
     const isExpired = (endDate: string) => {
@@ -65,7 +51,7 @@ export const CampainTable = ({paginatedCampain}: CampainTableProps) => {
                     </TableRow>
                 </TableHeader>
                 <TableBody >
-                    {campains.data.map((campain) => (
+                    {campains.data?.map((campain) => (
                         <TableRow key={campain.id}>
                             <TableCell>#{campain.id}</TableCell>
                             <TableCell>{campain.name}</TableCell>
@@ -85,10 +71,10 @@ export const CampainTable = ({paginatedCampain}: CampainTableProps) => {
             </Table>
             <Pagination className="p-2 justify-end border-t">
                 <PaginationContent >
-                    <Button className="bg-slate-700 hover:bg-slate-800" onClick={handlePrevious}>
+                    <Button disabled={!campains.prev} className="bg-slate-700 hover:bg-slate-800" onClick={handlePrevious}>
                         <ChevronLeft />
                     </Button>
-                    <Button className="bg-slate-700 hover:bg-slate-800" onClick={handleNext}>
+                    <Button disabled={!campains.next} className="bg-slate-700 hover:bg-slate-800" onClick={handleNext}>
                         <ChevronRight />
                     </Button>
                 </PaginationContent>

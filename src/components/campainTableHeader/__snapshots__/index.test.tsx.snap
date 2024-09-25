@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CampainTableHeader should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="pt-2 px-2  border-b border-b-slate-200 pb-2 flex justify-between items-center mb-3 "
+  >
+    <h1
+      class="text-xl font-semibold text-primary"
+    >
+       Painel de controle 
+    </h1>
+    <button
+      class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 text-primary-foreground shadow hover:bg-primary/90 h-9 px-4 py-2 rounded-lg bg-slate-700"
+    >
+      Criar campanha
+    </button>
+  </div>
+</DocumentFragment>
+`;

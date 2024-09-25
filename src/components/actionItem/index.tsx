@@ -1,4 +1,4 @@
-import { ActionItemProps } from "@/app/(app)/components/actionItem/types"
+import { ActionItemProps } from "@/components/actionItem/types"
 
 export const ActionItem = ({label,icon, onClick}: ActionItemProps) => {
     

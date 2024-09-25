@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ConfirmationDialog should match snapshot 1`] = `
+<DocumentFragment>
+  <div>
+    <h1
+      class="text-lg font-semibold pb-3"
+    >
+      Atenção!
+    </h1>
+    <p
+      class="text-muted-foreground text-sm font-normal"
+    >
+      Tem certeza que deseja excluir essa campanha?
+    </p>
+    <div
+      class="flex justify-end gap-2 mt-5"
+    >
+      <button
+        class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground h-9 px-4 py-2"
+      >
+        Cancelar
+      </button>
+      <button
+        class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow hover:bg-primary/90 h-9 px-4 py-2"
+      >
+        Continuar
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;

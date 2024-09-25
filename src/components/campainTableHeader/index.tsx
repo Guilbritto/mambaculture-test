@@ -1,6 +1,6 @@
 'use client'
 
-import { CreateCampainForm } from "@/app/(app)/components/createCampainForm"
+import { CreateUpdateCampainForm } from "@/components/createUpdateCampainForm"
 import { Button } from "@/components/ui/button"
 import { useModal } from "@/context/useModal"
 
@@ -9,7 +9,7 @@ export const CampainTableHeader = () => {
     
     const handleCreateCampain = () => {
         openModal()
-        render(<CreateCampainForm />)
+        render(<CreateUpdateCampainForm />)
     }
     
     return (
